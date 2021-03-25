@@ -2,7 +2,7 @@
 # e.g rails g migration AddCourseReferenceToMeasurement course:references
 # Then rails db:migrate
 
-# MANY_TO_MANY (1:50)
+# MANY_TO_MANY (2:10)
 In MANY_TO_MANY relationship we usually have a third table that holds the 'ids'
 of what you are trying to join.
 
