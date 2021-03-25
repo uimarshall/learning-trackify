@@ -19,7 +19,7 @@ has_many users through enrolment
 name: string
 desc: text
 image_url:string
-# rails g model course name image_url desc:text user:references course:references
+# rails g model course name image_url desc:text
 
 # CoursesEnrolment
 user_id:references
