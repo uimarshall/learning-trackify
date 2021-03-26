@@ -24,6 +24,9 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# Use 'jwt' for authentication
+gem 'jwt'
+
 # Use 'fast_jsonapi' for serilaize api generation
 gem 'fast_jsonapi'
 
