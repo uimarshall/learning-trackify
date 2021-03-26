@@ -24,6 +24,9 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# Use 'fast_jsonapi' for serilaize api generation
+gem 'fast_jsonapi'
+
 # Use figaro to set ENV variables
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
 gem 'figaro', '~> 1.2'
