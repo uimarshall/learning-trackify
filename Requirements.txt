@@ -34,3 +34,9 @@ password: digest
 # Add 'bcrypt' by uncommenting in Gemfile
 # rails g model user name email password:digest (4:58)
 # rails g controller users
+
+# JWT
+JsonWebToken - Encode and decode jwt tokens
+AuthorizeApiRequest - Authorize each API request
+AuthenticateUser - Authenticate users
+AuthenticationController - Orchestrate authentication process

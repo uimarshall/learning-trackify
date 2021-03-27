@@ -1,6 +1,6 @@
 module Api
   module V1
-    class AirlinesController < ApplicationController
+    class MeasurementsController < ApplicationController
       before_action :set_course, except: %i[my_measurements]
       before_action :set_course_measurement, only: %i[show update destroy]
       def index
