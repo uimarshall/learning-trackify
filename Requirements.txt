@@ -1,0 +1,42 @@
+# We Migrations to change the schema
+# e.g rails g migration AddCourseReferenceToMeasurement course:references
+# Then rails db:migrate
+
+# MANY_TO_MANY (2:10)
+In MANY_TO_MANY relationship we usually have a third table that holds the 'ids'
+of what you are trying to join.
+
+# Measurements
+# ==============
+date_m: date
+units: integer
+user_id: references
+course_id: references
+# rails g model measurement date_m:date units:integer user:references course:references
+
+# Courses
+has_many users through enrolment
+name: string
+desc: text
+image_url:string
+# rails g model course name image_url desc:text
+
+# CoursesEnrolment
+user_id:references
+course_id: references
+# rails g model enrolment user:references course:references
+
+# Users
+has_many courses through enrolment
+name:string
+email: string
+password: digest
+# Add 'bcrypt' by uncommenting in Gemfile
+# rails g model user name email password:digest (4:58)
+# rails g controller users
+
+# JWT
+JsonWebToken - Encode and decode jwt tokens
+AuthorizeApiRequest - Authorize each API request
+AuthenticateUser - Authenticate users
+AuthenticationController - Orchestrate authentication process
