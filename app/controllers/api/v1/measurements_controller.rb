@@ -6,7 +6,8 @@ module Api
       def index
         @measurements = Measurement
           .where(course_id: @course.id, user_id: current_user.id).last_week.order(id: :desc)
-        render json: MeasurementSerializer.new(@measurements).serialized_json
+        # render json: MeasurementSerializer.new(@measurements).serialized_json
+        json_response(@measurements)
       end
 
       def my_measurements
@@ -36,7 +37,6 @@ module Api
       end
 
       def update
-        # airline = Airline.find_by(slug: params[:slug])
         if @measurement.update(measurement_params)
           render json: MeasurementSerializer.new(@measurement).serialized_json
 
