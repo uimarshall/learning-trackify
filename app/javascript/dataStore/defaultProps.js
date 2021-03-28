@@ -1,4 +1,4 @@
-import Storage from '../helpers/Storage';
+import Storage from '../helpers/localStorage';
 import Time from '../helpers/Time';
 
 const defaultProps = {
